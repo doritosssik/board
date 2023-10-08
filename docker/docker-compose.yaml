@@ -1,0 +1,11 @@
+version: '3.5'
+
+services:
+  postgres_bd:
+    container_name: c_postgres
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_USER: "postgres"
+      POSTGRES_PASSWORD: "qwerty"
+    image: postgres:15.4
